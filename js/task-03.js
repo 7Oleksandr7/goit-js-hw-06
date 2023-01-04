@@ -20,9 +20,9 @@ const images = [
 ];
 
 const listImgEl = document.querySelector(".gallery");
-const itemImgEl = images.map((image) => {
-  return listImgEl.insertAdjacentHTML(
-    "beforeend",
-    `<li><img class="gallary-item" src=${image.url} alt='${image.alt}' width = 450px height = 268px></li>`
-  );
-});
+const imgEl = images.map(
+  (image) =>
+    `<li><img class="gallary-item" src=${image.url} alt='${image.alt}'></li>`
+);
+
+listImgEl.insertAdjacentHTML("beforeend", imgEl);

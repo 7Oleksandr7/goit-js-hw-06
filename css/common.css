@@ -23,8 +23,8 @@ button {
   cursor: pointer;
 }
 
-li {
-  list-style-type: none;
+ul {
+  list-style: none;
 }
 
 .gallery {
@@ -34,4 +34,6 @@ li {
 
 .gallary-item {
   margin: 10px;
+  width: 450px;
+  height: 268px;
 }
